@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spam Detector</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Spam Email Detector</h1>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Analyze Email Text</h2>
+      <form id="text-form">
+        <textarea id="email-text" placeholder="Paste an email here" rows="8"></textarea>
+        <button type="submit">Analyze</button>
+      </form>
+      <div id="text-result" class="result"></div>
+    </section>
+
+    <section class="card">
+      <h2>Analyze Email File</h2>
+      <form id="file-form">
+        <input type="file" id="email-file" accept=".eml,.txt,.msg" />
+        <button type="submit">Upload & Analyze</button>
+      </form>
+      <div id="file-result" class="result"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
